@@ -1,19 +1,19 @@
 {
   "name": "sample-node-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A sample Node.js application",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "deploy": "echo 'Deploy script goes here'"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "mocha": "^10.4.0",
-    "supertest": "^7.0.0"
+    "mocha": "^8.3.2"
   }
 }
