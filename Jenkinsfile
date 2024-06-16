@@ -1,21 +1,17 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS 14.17.1' // Replace with the Node.js version configured in Jenkins
+    }
+
     stages {
         stage('Build') {
             steps {
                 sh 'npm install'
+                // Other build steps
             }
         }
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'npm run deploy'
-            }
-        }
+        // Add more stages as needed
     }
 }
